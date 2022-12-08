@@ -19,14 +19,14 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
 
-    compile 'org.apache.commons:commons-compress:1.21'
-    compile 'org.freemarker:freemarker:2.3.31'
-    compile 'com.jcraft:jsch:0.1.55'
+    implementation 'org.apache.commons:commons-compress:1.21'
+    implementation 'org.freemarker:freemarker:2.3.31'
+    implementation 'com.jcraft:jsch:0.1.55'
 
-    testCompile 'junit:junit:4.13.2'
-    testCompile 'org.mockito:mockito-all:1.10.19'
-    testCompile 'org.powermock:powermock-module-junit4:2.0.9'
-    testCompile 'org.powermock:powermock-api-mockito:1.7.4'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito:1.7.4'
 
 
 }
