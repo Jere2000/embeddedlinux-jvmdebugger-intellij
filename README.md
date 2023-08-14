@@ -49,6 +49,10 @@ $ sudo sh ./ci-build.sh
 
 If you want to contribute and add functionality, make sure to add unit tests if they are needed.
 
+# Output
+
+The builded plugin can be found in `/build/distributions` folder
+
 [overviewlogo]: https://raw.githubusercontent.com/asebak/embeddedlinux-jvmdebugger-intellij/master/src/main/resources/documentation/embeddedlinuxjvm.png
 "Overview"
 

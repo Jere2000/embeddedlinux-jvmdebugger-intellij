@@ -57,8 +57,7 @@ public class CommandLineTarget {
     private void addVMArguments(@NotNull StringBuilder cmdBuf) {
         if (isDebugging) {
             //debugging with the port this is added on the remote device command line
-            cmdBuf.append("-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=" +
-                    embeddedLinuxJVMRunConfiguration.getRunnerParameters().getHostname() + ":" + embeddedLinuxJVMRunConfiguration.getRunnerParameters().getPort());
+            cmdBuf.append("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:" + embeddedLinuxJVMRunConfiguration.getRunnerParameters().getPort());
         }
         for (String arg : parameters.getVMParametersList().getParameters()) {
             //todo see if devs need the java agent support because for now this is a quick fix that might not be the proper way

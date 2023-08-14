@@ -126,6 +126,7 @@ public class SSHHandlerTarget {
                     String.format("cd %s", path),
                     String.format("tar -xvf %s.tar", consoleView.getProject().getName()),
                     "rm *.tar",
+                    "export DISPLAY=:0",
                     cmd);
             for (String command : commands) {
                 consoleView.print(EmbeddedLinuxJVMBundle.getString("pi.deployment.command") + command + NEW_LINE, ConsoleViewContentType.SYSTEM_OUTPUT);
